@@ -26,6 +26,12 @@ export async function POST(request: Request) {
     status: 303,
   });
   const sessionCookie = createAdminSessionCookie(result.data.email);
+  if (!sessionCookie) {
+    return NextResponse.redirect(
+      new URL("/admin/login?error=invalid_credentials", origin),
+      { status: 303 },
+    );
+  }
 
   response.cookies.set(
     sessionCookie.name,

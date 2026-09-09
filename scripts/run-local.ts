@@ -1,10 +1,11 @@
-import "dotenv/config";
-
 import { spawn, spawnSync } from "node:child_process";
-import { copyFileSync, existsSync } from "node:fs";
+import { copyFileSync, existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 
 import { PrismaClient } from "@prisma/client";
+import { config as loadDotenv } from "dotenv";
+
+import { prepareLocalAuthEnv } from "./local-env";
 
 const rootDir = resolve(process.cwd());
 const envPath = join(rootDir, ".env");
@@ -65,8 +66,15 @@ async function ensureSeedData() {
 async function main() {
   if (!existsSync(envPath)) {
     copyFileSync(envExamplePath, envPath);
-    logStep("Created .env from .env.example. Review credentials if needed.");
+    logStep("Created ignored .env from the safe template.");
   }
+
+  const preparedEnv = prepareLocalAuthEnv(readFileSync(envPath, "utf8"));
+  if (preparedEnv.changed) {
+    writeFileSync(envPath, preparedEnv.content, "utf8");
+    logStep("Generated strong local-only authentication values in the ignored .env file.");
+  }
+  loadDotenv({ path: envPath, override: true });
 
   const dbPath = join(rootDir, "prisma", "dev.db");
   const dbExists = existsSync(dbPath);
@@ -89,7 +97,10 @@ async function main() {
   console.log("[ATA-CMS] French site:  http://127.0.0.1:3000/fr");
   console.log("[ATA-CMS] Admin login:  http://127.0.0.1:3000/admin/login");
   console.log(`[ATA-CMS] Admin email:  ${readEnvValue("ATA_ADMIN_EMAIL")}`);
-  console.log(`[ATA-CMS] Admin password: ${readEnvValue("ATA_ADMIN_PASSWORD")}`);
+  if (preparedEnv.generatedPassword) {
+    console.log(`[ATA-CMS] New local admin password: ${preparedEnv.generatedPassword}`);
+    console.log("[ATA-CMS] Save this password now; it will not be printed on later runs.");
+  }
 
   if (setupOnly) {
     console.log("[ATA-CMS] Setup-only mode complete. Re-run without --setup-only to start Next.js.");

@@ -67,10 +67,7 @@ If you want only dependency/database preparation without starting the dev server
 - Public FR: `http://127.0.0.1:3000/fr`
 - Admin login: `http://127.0.0.1:3000/admin/login`
 
-Default local admin credentials come from `.env`:
-
-- `ATA_ADMIN_EMAIL=admin@abadis-tejarat-arka.local`
-- `ATA_ADMIN_PASSWORD=ChangeMe123!`
+`npm run local:setup` generates strong per-checkout administrator credentials in the ignored `.env` file. The password is displayed once when generated; save it locally. Runtime authentication remains disabled if the required email, password, or signing secret is missing or weak.
 
 ## Implemented Stack
 

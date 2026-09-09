@@ -48,7 +48,7 @@ export default async function AdminLoginPage({
                   id="email"
                   name="email"
                   type="email"
-                  placeholder="admin@abadis-tejarat-arka.local"
+                  placeholder="admin@example.local"
                   required
                 />
               </div>

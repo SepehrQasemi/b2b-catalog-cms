@@ -1,16 +1,13 @@
+import { getAdminAuthConfig } from "@/lib/auth/config";
 import { adminLoginSchema } from "@/lib/validation/auth";
 
 export function verifyAdminCredentials(input: unknown) {
-  const credentials = adminLoginSchema.parse(input);
+  const parsed = adminLoginSchema.safeParse(input);
+  const config = getAdminAuthConfig();
 
-  const configuredEmail =
-    process.env.ATA_ADMIN_EMAIL?.trim().toLowerCase() ??
-    "admin@abadis-tejarat-arka.local";
-  const configuredPassword =
-    process.env.ATA_ADMIN_PASSWORD?.trim() ?? "ChangeMe123!";
+  if (!parsed.success || !config) {
+    return false;
+  }
 
-  return (
-    credentials.email === configuredEmail &&
-    credentials.password === configuredPassword
-  );
+  return parsed.data.email === config.email && parsed.data.password === config.password;
 }
