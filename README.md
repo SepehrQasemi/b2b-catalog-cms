@@ -4,9 +4,24 @@
 
 The public product remains the Catalog website. This repository is the implementation workspace for that website + CMS foundation.
 
+
+## Screenshot
+
+![Synthetic multilingual catalog home page](docs/screenshots/public-catalog.png)
+
+The repository ships synthetic catalog data for local demonstration. It does not represent a real company or customer deployment.
+
+## Architecture and workflow
+
+Next.js App Router serves locale-prefixed public pages and the protected admin workspace. Prisma maps pages, products, categories, manufacturers, media, inquiries, translations, and publication state to a local SQLite database. Public queries expose only published content; admin server actions require a valid signed session.
+
+## Storage and deployment limits
+
+SQLite and local file-backed media keep setup simple for a single local instance. They are not suitable for horizontally scaled or serverless production deployment without replacing the database and upload storage. Authentication is a single administrator boundary, not a multi-role identity system.
+
 ## Current Status
 
-- Phases 0-5 are implemented
+- Public catalog, editorial admin, publication controls, and inquiry workflows are implemented
 - Public locales: `en`, `fr`
 - Internal-only modeled locale: `fa`
 - Inquiry persistence works locally without paid third-party services
@@ -135,3 +150,8 @@ If you want only dependency/database preparation without starting the dev server
 - [12_acceptance_checklist_for_build_phase.md](./docs/12_acceptance_checklist_for_build_phase.md)
 - [13_final_product_decisions.md](./docs/13_final_product_decisions.md)
 - [14_release_readiness.md](./docs/14_release_readiness.md)
+
+
+## Testing and licensing
+
+CI runs lint, TypeScript checking, 69 unit/component tests, and the production build. Playwright remains a local browser suite until a stable CI database/browser setup is maintained. Package metadata explicitly marks the project `UNLICENSED`; source is visible for review and reuse rights are reserved.
