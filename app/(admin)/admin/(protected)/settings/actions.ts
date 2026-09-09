@@ -1,5 +1,7 @@
 "use server";
 
+import { requireAdminSession } from "@/lib/auth/session";
+
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
@@ -15,6 +17,7 @@ import {
 import { settingsFormSchema } from "@/lib/validation/cms";
 
 export async function saveSettingsAction(formData: FormData) {
+  await requireAdminSession();
   const rawInput = {
     id: toRequiredString(formData.get("id")),
     defaultLocaleCode: toRequiredString(formData.get("defaultLocaleCode")),

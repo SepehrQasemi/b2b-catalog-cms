@@ -1,5 +1,7 @@
 "use server";
 
+import { requireAdminSession } from "@/lib/auth/session";
+
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
@@ -8,6 +10,7 @@ import { updateInquiryReview } from "@/lib/domain/inquiries";
 import { toNullableString, toRequiredString } from "@/lib/admin/utils";
 
 export async function saveInquiryReviewAction(formData: FormData) {
+  await requireAdminSession();
   const id = toRequiredString(formData.get("id"));
   const selected = toNullableString(formData.get("selected")) ?? id;
 

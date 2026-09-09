@@ -1,5 +1,7 @@
 "use server";
 
+import { requireAdminSession } from "@/lib/auth/session";
+
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
@@ -45,6 +47,7 @@ function parseSpecRows(localeCode: (typeof appLocales)[number], rawValue: string
 }
 
 export async function saveProductAction(formData: FormData) {
+  await requireAdminSession();
   const id = toNullableString(formData.get("id"));
   const imageIds = formData
     .getAll("imageIds")

@@ -1,5 +1,7 @@
 "use server";
 
+import { requireAdminSession } from "@/lib/auth/session";
+
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
@@ -21,6 +23,7 @@ function getRedirectTarget(id: string | null, search: string) {
 }
 
 export async function saveManufacturerAction(formData: FormData) {
+  await requireAdminSession();
   const id = toNullableString(formData.get("id"));
 
   const rawInput = {

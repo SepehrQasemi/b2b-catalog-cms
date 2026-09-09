@@ -1,5 +1,7 @@
 "use server";
 
+import { requireAdminSession } from "@/lib/auth/session";
+
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
@@ -12,6 +14,7 @@ import {
 import { mediaFormSchema } from "@/lib/validation/cms";
 
 export async function saveMediaAction(formData: FormData) {
+  await requireAdminSession();
   const id = toNullableString(formData.get("id"));
 
   const rawInput = {
