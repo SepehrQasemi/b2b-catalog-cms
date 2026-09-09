@@ -38,7 +38,7 @@ export default async function AdminDashboardPage() {
     <div className="space-y-8">
       <AdminPageHeader
         eyebrow="Dashboard"
-        title="ATA-CMS dashboard"
+        title="B2B Catalog CMS dashboard"
         description="Operational overview for catalog content, locale posture, publishing readiness, and the latest inquiry queue."
         action={
           <Button asChild>

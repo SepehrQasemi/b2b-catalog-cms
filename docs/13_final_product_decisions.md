@@ -4,10 +4,10 @@
 
 ### Public branding
 
-- official public company name: `Abadis Tejarat Arka`
-- short brand for compact UI areas: `ATA`
-- reuse the existing ATA logo as the website logo
-- `ATA CRM` is not the public website brand name
+- official public company name: `Demo B2B Catalog`
+- short brand for compact UI areas: `Catalog`
+- reuse the existing Catalog logo as the website logo
+- `CRM Platform` is not the public website brand name
 
 ### Typography
 

@@ -129,8 +129,8 @@ export default async function ContactPage({
             {getDisplayText(
               settings.translation?.contactIntro ?? page.translation.summary,
               locale === "fr"
-                ? "Expliquez votre besoin produit, disponibilite ou documentation. ATA vous repondra depuis le CMS local."
-                : "Explain your product, availability, or documentation need. ATA will respond from the local CMS workflow.",
+                ? "Expliquez votre besoin produit, disponibilite ou documentation. Catalog vous repondra depuis le CMS local."
+                : "Explain your product, availability, or documentation need. Catalog will respond from the local CMS workflow.",
             )}
           </p>
         </div>

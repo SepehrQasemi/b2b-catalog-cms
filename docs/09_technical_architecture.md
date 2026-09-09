@@ -46,7 +46,7 @@ Reason:
 ### Styling
 
 - `Tailwind CSS`
-- custom ATA theme tokens layered on top
+- custom Catalog theme tokens layered on top
 - `shadcn/ui` for accessible primitives, not default aesthetics
 
 Reason:
@@ -196,8 +196,8 @@ Do not use:
 
 Recommended approach:
 
-- define ATA theme tokens first
-- wrap `shadcn/ui` primitives with ATA-branded components
+- define Catalog theme tokens first
+- wrap `shadcn/ui` primitives with Catalog-branded components
 - use one icon library consistently in implementation, preferably `lucide-react`
 - use `Manrope` as the single MVP font family
 
@@ -248,7 +248,7 @@ Reason:
 - event bus
 - custom block-based page builder
 - CRM integration at request time
-- complex role matrix copied from ATA-CRM
+- complex role matrix copied from crm-platform
 - advanced PIM/DAM features
 - required paid analytics, error monitoring, storage, or email services
 

@@ -2,26 +2,26 @@
 
 ## Design objective
 
-Create a public-facing website that clearly belongs to the ATA ecosystem, but feels like a trusted B2B catalog and company website rather than an internal SaaS dashboard.
+Create a public-facing website that clearly belongs to the Catalog ecosystem, but feels like a trusted B2B catalog and company website rather than an internal SaaS dashboard.
 
 Public naming rules:
-- official public company name: `Abadis Tejarat Arka`
-- short brand for compact UI areas: `ATA`
-- `ATA CRM` is not the public website brand
+- official public company name: `Demo B2B Catalog`
+- short brand for compact UI areas: `Catalog`
+- `CRM Platform` is not the public website brand
 
 ## Core UI direction
 
-### Reuse from ATA-CRM
+### Reuse from crm-platform
 
-- ATA red as the main action color
+- Catalog red as the main action color
 - warm off-white/blush surface family
 - dark plum accent as a secondary tone
 - rounded card language
 - subtle gradients and radial background highlights
 - practical, confident tone rather than sterile corporate minimalism
-- existing ATA logo
+- existing Catalog logo
 
-### Do not copy literally from ATA-CRM
+### Do not copy literally from crm-platform
 
 - fixed dark dashboard sidebar
 - workspace subtabs as primary public navigation
@@ -47,7 +47,7 @@ Final MVP typography decision:
 Reason:
 - simpler implementation
 - cleaner multilingual consistency
-- lower risk of visual drift away from the existing ATA tone
+- lower risk of visual drift away from the existing Catalog tone
 
 ## Tone of UI copy
 
@@ -102,15 +102,15 @@ The home page is the most important page in the project.
 
 ### Goals
 
-- explain who Abadis Tejarat Arka is
-- show what ATA trades
+- explain who Demo B2B Catalog is
+- show what Catalog trades
 - establish trust fast
 - direct B2B visitors to products, categories, manufacturers, and contact
 
 ### Required section structure
 
 1. Hero
-2. Company positioning / who ATA serves
+2. Company positioning / who Catalog serves
 3. Featured categories
 4. Featured products
 5. Featured manufacturers
@@ -190,7 +190,7 @@ Secondary CTAs:
 
 ### Goals
 
-- show ATA's producer/brand network as a credibility layer
+- show Catalog's producer/brand network as a credibility layer
 - support browsing by manufacturer
 
 ### UX expectations
@@ -219,7 +219,7 @@ Secondary CTAs:
 ### Goals
 
 - reduce friction to inquiry
-- make Abadis Tejarat Arka feel reachable and professional
+- make Demo B2B Catalog feel reachable and professional
 - reinforce that the site is for B2B contact, not online checkout
 
 ### UX expectations
@@ -260,7 +260,7 @@ Secondary CTAs:
 - preview and publish controls
 - lightweight validation feedback
 
-## Reuse of ATA-CRM brand without cloning it
+## Reuse of crm-platform brand without cloning it
 
 ### Correct reuse
 

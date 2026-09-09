@@ -2,7 +2,7 @@
 
 ## Scope summary
 
-The new website is a multilingual B2B trading-company website for `Abadis Tejarat Arka`, with `ATA` as the approved short brand label in compact UI areas. Its job is to publish company information, products, categories, and manufacturers, then capture informational inquiries.
+The new website is a multilingual B2B trading-company website for `Demo B2B Catalog`, with `Catalog` as the approved short brand label in compact UI areas. Its job is to publish company information, products, categories, and manufacturers, then capture informational inquiries.
 
 It must behave like a serious public catalog, not like a transactional storefront and not like an internal CRM.
 
@@ -106,14 +106,14 @@ This means:
 
 ### Public intents the site must support well
 
-- Understand who ATA is
+- Understand who Catalog is
 - Browse product families quickly
 - Evaluate whether a product is relevant
 - See who manufactures or produces a product
-- See a public price when ATA intentionally exposes one
+- See a public price when Catalog intentionally exposes one
 - Understand when pricing requires direct contact
 - Discover related products from a manufacturer
-- Contact ATA with enough context for follow-up
+- Contact our team with enough context for follow-up
 
 ### Internal intents the CMS must support well
 
@@ -163,14 +163,14 @@ It must support:
 ## Architecture constraints
 
 - Must remain a standalone app for now
-- Must not depend on ATA-CRM runtime availability
+- Must not depend on crm-platform runtime availability
 - Must still leave room for future integration
 - Must stay operationally lighter than adopting a separate enterprise CMS product
 - Must avoid paid-service dependencies for core MVP functionality
 
 ## Brand constraint
 
-The website must reuse ATA-CRM brand evidence where it is reliable:
+The website must reuse crm-platform brand evidence where it is reliable:
 - logo
 - primary palette
 - broad visual character

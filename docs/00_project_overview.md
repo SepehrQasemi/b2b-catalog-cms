@@ -1,16 +1,16 @@
-# ATA Website Project Overview
+# B2B Catalog Project Overview
 
 ## Core idea
 
-ATA Website is a multilingual, SEO-ready, non-transactional B2B catalog website for the same company ecosystem as ATA-CRM. Its official public company name is `Abadis Tejarat Arka`, with `ATA` reserved as the short brand name for compact UI areas. It is meant to present the company credibly, explain what the business trades, publish strong product and manufacturer pages, and convert anonymous visitors into qualified contact or sourcing inquiries.
+B2B Catalog is a multilingual, SEO-ready, non-transactional B2B catalog website for the same company ecosystem as crm-platform. Its official public company name is `Demo B2B Catalog`, with `Catalog` reserved as the short brand name for compact UI areas. It is meant to present the company credibly, explain what the business trades, publish strong product and manufacturer pages, and convert anonymous visitors into qualified contact or sourcing inquiries.
 
 The website is not a storefront. It is a public-facing catalog and trust-building layer with an internal CMS.
 
 ## What the website is
 
 - A standalone public website for company presentation, catalog browsing, and inquiry capture
-- Public brand name: `Abadis Tejarat Arka`
-- Compact brand label where space is tight: `ATA`
+- Public brand name: `Demo B2B Catalog`
+- Compact brand label where space is tight: `Catalog`
 - A multilingual publishing system with public English and French from day one
 - A structured catalog centered on products, hierarchical categories, and manufacturers
 - A search-engine-friendly content surface with route, metadata, and publishing discipline built in from the start
@@ -20,7 +20,7 @@ The website is not a storefront. It is a public-facing catalog and trust-buildin
 
 - Not ecommerce
 - Not a cart, checkout, payment, or account-based ordering system
-- Not a clone of ATA-CRM's internal dashboard
+- Not a clone of crm-platform's internal dashboard
 - Not a CRM replacement
 - Not a custom page-builder platform
 - Not a multi-tenant or white-label system
@@ -60,16 +60,16 @@ The website is not a storefront. It is a public-facing catalog and trust-buildin
 - Manufacturer pages that reinforce sourcing credibility and cross-link to related products
 - Simple CMS-managed static pages for company and contact content
 
-## Relationship to ATA-CRM
+## Relationship to crm-platform
 
-The website and ATA-CRM belong to the same company ecosystem but serve different jobs.
+The website and crm-platform belong to the same company ecosystem but serve different jobs.
 
-ATA-CRM:
+crm-platform:
 - internal operating tool
 - lead, company, contact, task, and sales workflow system
 - authenticated operational interface
 
-ATA Website:
+B2B Catalog:
 - public acquisition, trust, and catalog layer
 - anonymous visitor experience
 - editorial publishing system
@@ -81,9 +81,9 @@ Shared foundations:
 - future opportunity for data exchange
 
 Public naming boundary:
-- `ATA CRM` remains the internal CRM product name
-- `Abadis Tejarat Arka` is the public website/company name
-- `ATA` is the approved short brand form for compact UI placements
+- `CRM Platform` remains the internal CRM product name
+- `Demo B2B Catalog` is the public website/company name
+- `Catalog` is the approved short brand form for compact UI placements
 
 ## Why this should be standalone now
 
@@ -98,7 +98,7 @@ Public naming boundary:
 Integration should stay optional and explicit rather than implicit or database-coupled.
 
 Recommended future integrations:
-- push qualified website inquiries into ATA-CRM as leads
+- push qualified website inquiries into crm-platform as leads
 - sync shared manufacturer or product reference data through a controlled import/export job
 - reuse approved media assets across both apps
 - optionally align staff identity between CMS admin and CRM accounts later
@@ -123,7 +123,7 @@ Not recommended for MVP:
 The home page is a primary commercial asset, not a placeholder.
 
 It must:
-- communicate what ATA does within seconds
+- communicate what Catalog does within seconds
 - establish trust through company positioning and sourcing credibility
 - guide users toward products, categories, manufacturers, and contact paths
 - support SEO without turning into a generic keyword dump
@@ -135,5 +135,5 @@ It must:
 - Architected but non-public locale: `fa`
 - The later build will use a single Next.js application with both public site and protected admin
 - The CMS will be structured and form-driven, not a block-everything page builder
-- The website will reuse ATA-CRM brand primitives but should not visually mimic the CRM dashboard layout
+- The website will reuse crm-platform brand primitives but should not visually mimic the CRM dashboard layout
 - MVP should avoid paid-service requirements for core functionality

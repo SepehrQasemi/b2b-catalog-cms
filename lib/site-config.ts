@@ -1,6 +1,6 @@
 export const siteConfig = {
-  companyName: "Abadis Tejarat Arka",
-  shortName: "ATA",
+  companyName: "Demo B2B Catalog",
+  shortName: "Catalog",
   domainIntent: "B2B trading and product sourcing catalog",
   publicTagline: "Manufacturer-aware catalog publishing for serious B2B sourcing conversations.",
   publicContactEmail: "info@abadis-tejarat-arka.com",

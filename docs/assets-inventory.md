@@ -1,30 +1,30 @@
 # Assets Inventory
 
-## Direct ATA-CRM brand assets
+## Direct crm-platform brand assets
 
 | Asset | Source | Type | Status | Recommended use |
 | --- | --- | --- | --- | --- |
-| ATA logo | `C:\dev\ATA-CRM\web\public\ata-logo.svg` | SVG logo | observed and reusable | reuse as website logo for Abadis Tejarat Arka, with `ATA` as compact brand shorthand |
-| Favicon | `C:\dev\ATA-CRM\web\app\favicon.ico` | ICO | observed but inconsistent | do not reuse; replace with ATA-branded favicon set |
+| Catalog logo | `the local CRM reference project\web\public\catalog-logo.svg` | SVG logo | observed and reusable | reuse as website logo for Demo B2B Catalog, with `Catalog` as compact brand shorthand |
+| Favicon | `the local CRM reference project\web\app\favicon.ico` | ICO | observed but inconsistent | do not reuse; replace with Catalog-branded favicon set |
 
 ## Token and style sources
 
 | Source | What it provides | Use in website phase |
 | --- | --- | --- |
-| `C:\dev\ATA-CRM\web\app\globals.css` | color palette, radius, shadow, surface treatment | primary design-token reference |
-| `C:\dev\ATA-CRM\web\components\brand-logo.tsx` | logo naming and usage pattern | reference only |
-| `C:\dev\ATA-CRM\web\components\app-shell.tsx` | brand application inside CRM | reference only; do not copy layout directly |
-| `C:\dev\ATA-CRM\web\components\public-landing.tsx` | dormant public-facing brand attempt | reference only; not production-proof |
+| `the local CRM reference project\web\app\globals.css` | color palette, radius, shadow, surface treatment | primary design-token reference |
+| `the local CRM reference project\web\components\brand-logo.tsx` | logo naming and usage pattern | reference only |
+| `the local CRM reference project\web\components\app-shell.tsx` | brand application inside CRM | reference only; do not copy layout directly |
+| `the local CRM reference project\web\components\public-landing.tsx` | dormant public-facing brand attempt | reference only; not production-proof |
 
-## Non-brand or placeholder assets found in ATA-CRM
+## Non-brand or placeholder assets found in crm-platform
 
 | Asset | Source | Notes | Reuse? |
 | --- | --- | --- | --- |
-| `file.svg` | `C:\dev\ATA-CRM\web\public\file.svg` | generic starter asset | no |
-| `globe.svg` | `C:\dev\ATA-CRM\web\public\globe.svg` | generic starter asset | no |
-| `next.svg` | `C:\dev\ATA-CRM\web\public\next.svg` | default framework asset | no |
-| `vercel.svg` | `C:\dev\ATA-CRM\web\public\vercel.svg` | default framework asset | no |
-| `window.svg` | `C:\dev\ATA-CRM\web\public\window.svg` | generic starter asset | no |
+| `file.svg` | `the local CRM reference project\web\public\file.svg` | generic starter asset | no |
+| `globe.svg` | `the local CRM reference project\web\public\globe.svg` | generic starter asset | no |
+| `next.svg` | `the local CRM reference project\web\public\next.svg` | default framework asset | no |
+| `vercel.svg` | `the local CRM reference project\web\public\vercel.svg` | default framework asset | no |
+| `window.svg` | `the local CRM reference project\web\public\window.svg` | generic starter asset | no |
 
 ## Brand primitives extracted
 
@@ -50,16 +50,16 @@
 
 ### Typography evidence and decision
 
-- CSS stack names `Manrope` and `Space Grotesk` were observed in ATA-CRM
+- CSS stack names `Manrope` and `Space Grotesk` were observed in crm-platform
 - logo uses `Arial Black` inside the SVG artwork
-- no formal font loading implementation was found in ATA-CRM
+- no formal font loading implementation was found in crm-platform
 - final website MVP decision: use `Manrope` only
 
 ## Reuse policy for the new website
 
 ### Approved starting points
 
-- ATA logo asset
+- Catalog logo asset
 - red/blush/plum palette
 - rounded-card and soft-shadow language
 - restrained gradient usage
@@ -74,5 +74,5 @@
 
 ## Notes
 
-- No assets were copied from ATA-CRM into this repository during this phase
+- No assets were copied from crm-platform into this repository during this phase
 - This file inventories reference sources only

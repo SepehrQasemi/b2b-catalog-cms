@@ -6,7 +6,7 @@ $ErrorActionPreference = "Stop"
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
 
 function Fail([string]$Message) {
-  Write-Host "[ATA-CMS] $Message" -ForegroundColor Red
+  Write-Host "[B2B Catalog CMS] $Message" -ForegroundColor Red
   exit 1
 }
 
@@ -22,10 +22,10 @@ Set-Location $Root
 
 if (-not (Test-Path ".env") -and (Test-Path ".env.example")) {
   Copy-Item ".env.example" ".env"
-  Write-Host "[ATA-CMS] Created .env from .env.example"
+  Write-Host "[B2B Catalog CMS] Created .env from .env.example"
 }
 
-Write-Host "[ATA-CMS] Installing dependencies..."
+Write-Host "[B2B Catalog CMS] Installing dependencies..."
 npm install
 if ($LASTEXITCODE -ne 0) {
   exit $LASTEXITCODE

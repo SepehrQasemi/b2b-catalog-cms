@@ -24,17 +24,17 @@ describe("pricing rules", () => {
         locale: "fr",
         amount: null,
         currency: null,
-        message: "Contactez ATA pour le prix.",
+        message: "Contactez notre équipe pour le prix.",
         unitLabel: null,
       }),
-    ).toBe("Contactez ATA pour le prix.");
+    ).toBe("Contactez notre équipe pour le prix.");
 
     expect(
       hasPricingFallback({
         locale: "fr",
         amount: null,
         currency: null,
-        message: "Contactez ATA pour le prix.",
+        message: "Contactez notre équipe pour le prix.",
         unitLabel: null,
       }),
     ).toBe(true);
@@ -46,10 +46,10 @@ describe("pricing rules", () => {
         locale: "en",
         amount: 21.5,
         currency: "BAD",
-        message: "  Contact ATA for pricing.  ",
+        message: "  Contact our team for pricing.  ",
         unitLabel: "kg",
       }),
-    ).toBe("Contact ATA for pricing.");
+    ).toBe("Contact our team for pricing.");
   });
 
   test("uses a generic localized fallback when neither price nor message is usable", () => {
@@ -61,7 +61,7 @@ describe("pricing rules", () => {
         message: "   ",
         unitLabel: null,
       }),
-    ).toBe("Contactez ATA pour le prix.");
+    ).toBe("Contactez notre équipe pour le prix.");
 
     expect(
       hasPricingFallback({

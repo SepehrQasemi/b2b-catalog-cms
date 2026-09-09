@@ -77,7 +77,7 @@ describe("cms validation", () => {
   test("accepts product document rows with per-locale metadata", () => {
     const result = productFormSchema.safeParse({
       id: "product-citric-acid",
-      sku: "ATA-CIT-001",
+      sku: "Catalog-CIT-001",
       categoryId: "cat-acidity-regulators",
       manufacturerId: "manufacturer-meridian",
       availabilityStatus: "in_stock",

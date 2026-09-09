@@ -27,7 +27,7 @@ test("french product detail shows localized availability and pricing fallback", 
     page.getByRole("heading", { name: /acide sorbique/i }),
   ).toBeVisible();
   await expect(page.getByText(/actuellement indisponible/i)).toBeVisible();
-  await expect(page.getByText(/contactez ATA pour le prix/i)).toBeVisible();
+  await expect(page.getByText(/contactez Catalog pour le prix/i)).toBeVisible();
 });
 
 test("contact inquiry flow stores a submission and confirms success", async ({

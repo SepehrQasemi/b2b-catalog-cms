@@ -24,7 +24,7 @@ export function BrandLogo({
     >
       <span className="relative h-11 w-14 shrink-0">
         <Image
-          src="/brand/ata-logo.svg"
+          src="/brand/catalog-logo.svg"
           alt={`${siteConfig.shortName} logo`}
           fill
           sizes="56px"

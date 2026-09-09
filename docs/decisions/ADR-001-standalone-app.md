@@ -6,7 +6,7 @@ Accepted for build preparation
 
 ## Decision
 
-Build the website as a standalone application rather than embedding it into ATA-CRM.
+Build the website as a standalone application rather than embedding it into crm-platform.
 
 ## Rationale
 

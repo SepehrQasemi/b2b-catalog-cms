@@ -14,7 +14,7 @@ const npmCommand = "npm";
 const setupOnly = process.argv.includes("--setup-only");
 
 function logStep(message: string) {
-  console.log(`\n[ATA-CMS] ${message}`);
+  console.log(`\n[B2B Catalog CMS] ${message}`);
 }
 
 function toShellCommand(args: string[]) {
@@ -92,18 +92,18 @@ async function main() {
     await ensureSeedData();
   }
 
-  console.log("\n[ATA-CMS] Local environment is ready.");
-  console.log("[ATA-CMS] Public site:  http://127.0.0.1:3000/en");
-  console.log("[ATA-CMS] French site:  http://127.0.0.1:3000/fr");
-  console.log("[ATA-CMS] Admin login:  http://127.0.0.1:3000/admin/login");
-  console.log(`[ATA-CMS] Admin email:  ${readEnvValue("ATA_ADMIN_EMAIL")}`);
+  console.log("\n[B2B Catalog CMS] Local environment is ready.");
+  console.log("[B2B Catalog CMS] Public site:  http://127.0.0.1:3000/en");
+  console.log("[B2B Catalog CMS] French site:  http://127.0.0.1:3000/fr");
+  console.log("[B2B Catalog CMS] Admin login:  http://127.0.0.1:3000/admin/login");
+  console.log(`[B2B Catalog CMS] Admin email:  ${readEnvValue("CMS_ADMIN_EMAIL")}`);
   if (preparedEnv.generatedPassword) {
-    console.log(`[ATA-CMS] New local admin password: ${preparedEnv.generatedPassword}`);
-    console.log("[ATA-CMS] Save this password now; it will not be printed on later runs.");
+    console.log(`[B2B Catalog CMS] New local admin password: ${preparedEnv.generatedPassword}`);
+    console.log("[B2B Catalog CMS] Save this password now; it will not be printed on later runs.");
   }
 
   if (setupOnly) {
-    console.log("[ATA-CMS] Setup-only mode complete. Re-run without --setup-only to start Next.js.");
+    console.log("[B2B Catalog CMS] Setup-only mode complete. Re-run without --setup-only to start Next.js.");
     return;
   }
 
@@ -123,7 +123,7 @@ async function main() {
 }
 
 main().catch((error) => {
-  console.error("\n[ATA-CMS] Local run failed.");
+  console.error("\n[B2B Catalog CMS] Local run failed.");
   console.error(error);
   process.exit(1);
 });

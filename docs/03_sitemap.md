@@ -31,7 +31,7 @@ Architected but non-public:
 
 ### `/{locale}`
 
-- Purpose: strategic home page for Abadis Tejarat Arka, using `ATA` only where compact branding is needed
+- Purpose: strategic home page for Demo B2B Catalog, using `Catalog` only where compact branding is needed
 - Target user intent: understand the company quickly, validate B2B credibility, discover products/categories/manufacturers, and move toward inquiry
 - Main content blocks:
   - hero
@@ -55,7 +55,7 @@ Architected but non-public:
 
 ### `/{locale}/about`
 
-- Purpose: explain Abadis Tejarat Arka, its trading capabilities, market focus, and professional B2B positioning
+- Purpose: explain Demo B2B Catalog, its trading capabilities, market focus, and professional B2B positioning
 - Target user intent: validate credibility before inquiry
 - Main content blocks:
   - company overview
@@ -179,7 +179,7 @@ Architected but non-public:
 ### `/{locale}/manufacturers/{manufacturerSlug}`
 
 - Purpose: manufacturer detail page that reinforces sourcing credibility and routes visitors to related products
-- Target user intent: evaluate a producer/brand and see what ATA offers from that producer/brand
+- Target user intent: evaluate a producer/brand and see what Catalog offers from that producer/brand
 - Main content blocks:
   - manufacturer hero
   - manufacturer overview
@@ -198,7 +198,7 @@ Architected but non-public:
 ### `/{locale}/contact`
 
 - Purpose: central B2B inquiry and contact page
-- Target user intent: contact Abadis Tejarat Arka, request sourcing help, ask about a product/manufacturer, or request pricing
+- Target user intent: contact Demo B2B Catalog, request sourcing help, ask about a product/manufacturer, or request pricing
 - Main content blocks:
   - contact intro
   - inquiry form
@@ -220,7 +220,7 @@ These are useful and low-risk, but not core branded pages for the initial scope:
 - `/{locale}/privacy`
 - `/{locale}/legal`
 - `/{locale}/downloads` only if real files exist
-- `/{locale}/industries` only if ATA has validated industry segmentation copy
+- `/{locale}/industries` only if Catalog has validated industry segmentation copy
 
 ## Admin / CMS sitemap
 

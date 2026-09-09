@@ -116,7 +116,7 @@ export default async function CategoryDetailPage({
             </h2>
             <Button asChild variant="secondary">
               <Link href={`/${locale}/contact`}>
-                {locale === "fr" ? "Parler a ATA" : "Talk to ATA"}
+                {locale === "fr" ? "Parler à notre équipe" : "Talk to our team"}
               </Link>
             </Button>
           </div>

@@ -67,9 +67,9 @@ Blocking level:
 ### 5. What final favicon and social-sharing asset set should represent the public site?
 
 Resolved already:
-- website logo: existing ATA logo
-- public company name: Abadis Tejarat Arka
-- short brand: ATA
+- website logo: existing Catalog logo
+- public company name: Demo B2B Catalog
+- short brand: Catalog
 
 Still open:
 - favicon pack design

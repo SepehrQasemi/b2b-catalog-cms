@@ -73,7 +73,7 @@ export default async function HomePage({
       <section className="section-shell">
         <div className="content-shell hero-grid items-stretch">
           <div className="reveal-rise space-y-8">
-            <Badge variant="muted">Abadis Tejarat Arka</Badge>
+            <Badge variant="muted">Demo B2B Catalog</Badge>
             <div className="space-y-5">
               <h1 className="max-w-4xl text-balance text-5xl font-semibold leading-[0.98] tracking-[-0.05em] sm:text-6xl">
                 {getDisplayText(
@@ -114,7 +114,7 @@ export default async function HomePage({
           </div>
           <Card className="brand-ring reveal-rise reveal-delay-1 overflow-hidden p-8">
             <div className="space-y-6 rounded-[1.6rem] bg-gradient-to-br from-[#4d0f22] to-[#1c060c] p-8 text-white shadow-[0_22px_55px_rgba(43,8,19,0.24)]">
-              <div className="eyebrow border-white/10 bg-white/10 text-white/75">ATA</div>
+              <div className="eyebrow border-white/10 bg-white/10 text-white/75">Catalog</div>
               <div className="space-y-3">
                 <h2 className="text-3xl font-semibold tracking-[-0.03em]">
                   {getDisplayText(
@@ -310,7 +310,7 @@ export default async function HomePage({
             </div>
             <Button asChild size="lg">
               <Link href={`/${locale}/contact`}>
-                {locale === "fr" ? "Contacter ATA" : "Contact ATA"}
+                {locale === "fr" ? "Contacter Catalog" : "Contact our team"}
               </Link>
             </Button>
           </div>

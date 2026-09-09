@@ -421,7 +421,7 @@ MVP recommendation:
 What not to add in MVP:
 - granular field-level ACL
 - complex approval chains
-- many role tiers copied from ATA-CRM
+- many role tiers copied from crm-platform
 
 ## What the CMS should explicitly not manage in MVP
 

@@ -24,6 +24,6 @@ describe("metadata builder", () => {
     expect(metadata.alternates?.languages?.["x-default"]).toBe(
       "http://localhost:3000/en/products",
     );
-    expect(metadata.title).toBe("Products | Abadis Tejarat Arka");
+    expect(metadata.title).toBe("Products | Demo B2B Catalog");
   });
 });

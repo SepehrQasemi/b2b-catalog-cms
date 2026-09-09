@@ -36,7 +36,7 @@ export function ProductCard({
       ? "La fiche produit detaillee sera enrichie par l equipe catalogue."
       : "The detailed product profile will be completed by the catalog team.",
   );
-  const manufacturerLabel = getDisplayText(manufacturerName, "ATA catalog");
+  const manufacturerLabel = getDisplayText(manufacturerName, "Catalog catalog");
   const priceCopy = getDisplayText(priceLabel);
   const cardContent = (
     <>

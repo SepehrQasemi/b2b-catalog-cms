@@ -21,10 +21,10 @@ export default async function AdminLoginPage({
             <BrandLogo href="/admin/login" shortLabel tone="light" />
             <div className="mt-10 space-y-5">
               <p className="eyebrow border-white/18 bg-white/8 text-white/75">
-                ATA-CMS admin
+                B2B Catalog CMS admin
               </p>
               <h1 className="text-4xl font-semibold leading-tight tracking-[-0.03em]">
-                Protected editorial workspace for the ATA public website.
+                Protected editorial workspace for the Catalog public website.
               </h1>
               <p className="max-w-md text-sm leading-7 text-white/76">
                 Manage pages, catalog content, media, SEO posture, and inbound
@@ -58,8 +58,8 @@ export default async function AdminLoginPage({
               </div>
               {error ? (
                 <p className="rounded-2xl border border-danger/15 bg-rose-50 px-4 py-3 text-sm text-danger">
-                  Invalid credentials. Check `ATA_ADMIN_EMAIL` and
-                  `ATA_ADMIN_PASSWORD`.
+                  Invalid credentials. Check `CMS_ADMIN_EMAIL` and
+                  `CMS_ADMIN_PASSWORD`.
                 </p>
               ) : null}
               <Button type="submit" size="lg" className="w-full justify-center">

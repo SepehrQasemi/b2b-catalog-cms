@@ -13,8 +13,8 @@ export function getDisplayText(
 
 export function getDefaultPricingFallbackMessage(locale: PublicLocale) {
   return locale === "fr"
-    ? "Contactez ATA pour le prix."
-    : "Contact ATA for pricing.";
+    ? "Contactez notre équipe pour le prix."
+    : "Contact our team for pricing.";
 }
 
 export function getCatalogPath(

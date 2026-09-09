@@ -8,8 +8,8 @@ const MIN_PASSWORD_LENGTH = 16;
 const MIN_SECRET_BYTES = 32;
 
 export function getAdminAuthConfig(): AdminAuthConfig | null {
-  const email = process.env.ATA_ADMIN_EMAIL?.trim().toLowerCase() ?? "";
-  const password = process.env.ATA_ADMIN_PASSWORD?.trim() ?? "";
+  const email = process.env.CMS_ADMIN_EMAIL?.trim().toLowerCase() ?? "";
+  const password = process.env.CMS_ADMIN_PASSWORD?.trim() ?? "";
   const secret = process.env.AUTH_SECRET?.trim() ?? "";
 
   const emailIsValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);

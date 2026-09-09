@@ -1,4 +1,4 @@
-# ATA-CMS Hardening Pass Report
+# B2B Catalog CMS Hardening Pass Report
 
 ## Audit snapshot
 
@@ -15,7 +15,7 @@
 
 ### PARTIAL initially
 
-- repository/project identity still used `ATA Website` / `ata-website` in key places
+- repository/project identity still used `B2B Catalog` / `b2b-catalog` in key places
 - public query layer did not consistently restrict nested translations to `published`
 - public product documents could be shown without a published localized label
 - admin browser-level verification was missing
@@ -26,11 +26,11 @@
 ### FAIL initially
 
 - no one-click local start workflow existed
-- repo was not yet prepared cleanly under the target project name `ATA-CMS`
+- repo was not yet prepared cleanly under the target project name `B2B Catalog CMS`
 
 ## Fixes implemented in this pass
 
-- renamed repository-facing project identity to `ATA-CMS` in package metadata and README
+- renamed repository-facing project identity to `B2B Catalog CMS` in package metadata and README
 - added one-click local run scripts for Windows and macOS/Linux
 - added Windows/macOS/Linux stop helpers
 - added shared local bootstrap script for env creation, Prisma generation, schema sync, safe seed detection, and local start

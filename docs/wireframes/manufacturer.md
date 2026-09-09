@@ -2,7 +2,7 @@
 
 ## Page goal
 
-Show who the producer/brand is and connect that identity to ATA's product offering.
+Show who the producer/brand is and connect that identity to Catalog's product offering.
 
 ## Wireframe
 
@@ -38,7 +38,7 @@ Show who the producer/brand is and connect that identity to ATA's product offeri
 
 ### 5. Contact / sourcing CTA
 
-- ask ATA about products from this manufacturer
+- ask Catalog about products from this manufacturer
 
 ## Mobile notes
 

@@ -4,7 +4,7 @@
 
 ### Goals
 
-- understand ATA-CRM brand references
+- understand crm-platform brand references
 - define the product scope and constraints
 - define IA, domain model, multilingual model, SEO model, and CMS scope
 
@@ -17,7 +17,7 @@
 
 ### Dependencies
 
-- access to ATA-CRM reference repository
+- access to crm-platform reference repository
 
 ### Exit criteria
 
@@ -45,7 +45,7 @@
 - Prisma setup with initial schema draft
 - Auth.js admin auth foundation
 - public route group and admin route group
-- ATA theme token layer
+- Catalog theme token layer
 - `Manrope` typography setup
 
 ### Dependencies
@@ -58,7 +58,7 @@
 - app boots locally
 - admin routes are protected
 - locale routing structure exists
-- theme tokens reflect the approved ATA brand interpretation
+- theme tokens reflect the approved Catalog brand interpretation
 - no paid service is required for the basic local development loop
 
 ### Risks

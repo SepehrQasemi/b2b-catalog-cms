@@ -36,17 +36,17 @@ export function prepareLocalAuthEnv(input: string): PreparedLocalEnv {
     changed = true;
   }
 
-  const currentEmail = readEnvValue(content, "ATA_ADMIN_EMAIL").toLowerCase();
+  const currentEmail = readEnvValue(content, "CMS_ADMIN_EMAIL").toLowerCase();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(currentEmail)) {
     generatedEmail = `admin.${randomBytes(4).toString("hex")}@local.test`;
-    content = writeEnvValue(content, "ATA_ADMIN_EMAIL", generatedEmail);
+    content = writeEnvValue(content, "CMS_ADMIN_EMAIL", generatedEmail);
     changed = true;
   }
 
-  const currentPassword = readEnvValue(content, "ATA_ADMIN_PASSWORD");
+  const currentPassword = readEnvValue(content, "CMS_ADMIN_PASSWORD");
   if (currentPassword.length < MIN_PASSWORD_LENGTH) {
     generatedPassword = randomBytes(18).toString("base64url");
-    content = writeEnvValue(content, "ATA_ADMIN_PASSWORD", generatedPassword);
+    content = writeEnvValue(content, "CMS_ADMIN_PASSWORD", generatedPassword);
     changed = true;
   }
 

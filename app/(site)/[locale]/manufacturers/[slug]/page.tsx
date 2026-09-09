@@ -119,7 +119,7 @@ export default async function ManufacturerDetailPage({
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg">
                 <Link href={`/${locale}/contact?manufacturer=${data.manufacturer.id}`}>
-                  {locale === "fr" ? "Contacter ATA" : "Contact ATA"}
+                  {locale === "fr" ? "Contacter Catalog" : "Contact our team"}
                 </Link>
               </Button>
               {websiteHref ? (

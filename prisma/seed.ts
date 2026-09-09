@@ -82,11 +82,11 @@ async function seedMedia() {
       {
         id: "media-share",
         kind: MediaKind.image,
-        storageKey: "brand/ata-logo.svg",
-        publicUrl: "/brand/ata-logo.svg",
+        storageKey: "brand/catalog-logo.svg",
+        publicUrl: "/brand/catalog-logo.svg",
         mimeType: "image/svg+xml",
-        title: "ATA brand mark",
-        originalFilename: "ata-logo.svg",
+        title: "Catalog brand mark",
+        originalFilename: "catalog-logo.svg",
       },
       {
         id: "media-product-citric",
@@ -136,11 +136,11 @@ async function seedMedia() {
       {
         id: "media-manufacturer-arka",
         kind: MediaKind.image,
-        storageKey: "catalog/arka-process.svg",
-        publicUrl: "/catalog/arka-process.svg",
+        storageKey: "catalog/catalog-process.svg",
+        publicUrl: "/catalog/catalog-process.svg",
         mimeType: "image/svg+xml",
         title: "Arka Process",
-        originalFilename: "arka-process.svg",
+        originalFilename: "catalog-process.svg",
       },
       {
         id: "media-doc-citric",
@@ -195,42 +195,42 @@ async function seedSettings() {
         { pageKey: "contact", group: "contact" },
       ]),
       defaultShareImageMediaId: "media-share",
-      searchConsoleVerification: "ata-local-dev-verification",
+      searchConsoleVerification: "catalog-local-dev-verification",
       translations: {
         create: [
           {
             localeCode: "en",
-            siteName: "Abadis Tejarat Arka",
+            siteName: "Demo B2B Catalog",
             siteTagline: "Manufacturer-aware sourcing catalog",
-            defaultMetaTitleSuffix: "Abadis Tejarat Arka",
+            defaultMetaTitleSuffix: "Demo B2B Catalog",
             defaultMetaDescription:
               "Multilingual B2B catalog for industrial and food ingredient sourcing.",
             footerCompanyBlurb:
-              "ATA connects buyers with manufacturer-led product information and inquiry handling.",
+              "Catalog connects buyers with manufacturer-led product information and inquiry handling.",
             contactIntro:
               "Use the inquiry form for pricing, sourcing, and technical documentation requests.",
             defaultContactForPricingMessage:
-              "Contact ATA for pricing, lead time, and sourcing details.",
+              "Contact our team for pricing, lead time, and sourcing details.",
           },
           {
             localeCode: "fr",
-            siteName: "Abadis Tejarat Arka",
+            siteName: "Demo B2B Catalog",
             siteTagline: "Catalogue B2B oriente fabricants",
-            defaultMetaTitleSuffix: "Abadis Tejarat Arka",
+            defaultMetaTitleSuffix: "Demo B2B Catalog",
             defaultMetaDescription:
               "Catalogue B2B multilingue pour le sourcing de produits industriels et ingredients.",
             footerCompanyBlurb:
-              "ATA structure la decouverte produit, les profils fabricants et les demandes de contact.",
+              "Catalog structure la decouverte produit, les profils fabricants et les demandes de contact.",
             contactIntro:
               "Utilisez le formulaire pour les demandes de prix, de sourcing et de documentation.",
             defaultContactForPricingMessage:
-              "Contactez ATA pour le prix, le delai et les details de sourcing.",
+              "Contactez notre équipe pour le prix, le delai et les details de sourcing.",
           },
           {
             localeCode: "fa",
-            siteName: "Abadis Tejarat Arka",
+            siteName: "Demo B2B Catalog",
             siteTagline: "Internal Farsi draft",
-            defaultMetaTitleSuffix: "Abadis Tejarat Arka",
+            defaultMetaTitleSuffix: "Demo B2B Catalog",
             defaultMetaDescription: "Internal-only Farsi configuration.",
             footerCompanyBlurb: "Internal-only Farsi configuration.",
             contactIntro: "Internal-only Farsi configuration.",
@@ -251,10 +251,10 @@ async function seedPages() {
       translations: [
         {
           localeCode: "en",
-          title: "Abadis Tejarat Arka",
+          title: "Demo B2B Catalog",
           summary: "B2B product sourcing and catalog publishing for industrial buyers.",
           heroHeading: "Manufacturer-aware sourcing for serious B2B buying teams.",
-          seoTitle: "Abadis Tejarat Arka | Industrial product sourcing",
+          seoTitle: "Demo B2B Catalog | Industrial product sourcing",
           seoDescription:
             "Discover categories, manufacturers, and products with structured inquiry workflows.",
           publishStatus: PublishStatus.published,
@@ -262,10 +262,10 @@ async function seedPages() {
         },
         {
           localeCode: "fr",
-          title: "Abadis Tejarat Arka",
+          title: "Demo B2B Catalog",
           summary: "Catalogue B2B pour le sourcing de produits industriels.",
           heroHeading: "Un sourcing structure pour les equipes achat B2B.",
-          seoTitle: "Abadis Tejarat Arka | Sourcing industriel",
+          seoTitle: "Demo B2B Catalog | Sourcing industriel",
           seoDescription:
             "Explorez categories, fabricants et produits avec un parcours de demande structure.",
           publishStatus: PublishStatus.published,
@@ -273,10 +273,10 @@ async function seedPages() {
         },
         {
           localeCode: "fa",
-          title: "ATA Home Draft",
+          title: "Catalog Home Draft",
           summary: "Internal only",
           heroHeading: "Internal only",
-          seoTitle: "ATA Home Draft",
+          seoTitle: "Catalog Home Draft",
           seoDescription: "Internal only",
           publishStatus: PublishStatus.review,
           contentBlocksJson: json([{ type: "hero" }]),
@@ -292,9 +292,9 @@ async function seedPages() {
           localeCode: "en",
           title: "About",
           slug: "about",
-          summary: "About ATA",
-          seoTitle: "About ATA",
-          seoDescription: "Learn about ATA, its sourcing approach, and its catalog focus.",
+          summary: "About the catalog",
+          seoTitle: "About the catalog",
+          seoDescription: "Learn about Catalog, its sourcing approach, and its catalog focus.",
           publishStatus: PublishStatus.published,
           contentBlocksJson: json([{ type: "intro" }, { type: "strengths" }]),
         },
@@ -302,10 +302,10 @@ async function seedPages() {
           localeCode: "fr",
           title: "A propos",
           slug: "a-propos",
-          summary: "A propos de ATA",
-          seoTitle: "A propos de ATA",
+          summary: "À propos du catalogue",
+          seoTitle: "À propos du catalogue",
           seoDescription:
-            "Decouvrez ATA, son approche de sourcing et sa logique catalogue.",
+            "Decouvrez Catalog, son approche de sourcing et sa logique catalogue.",
           publishStatus: PublishStatus.published,
           contentBlocksJson: json([{ type: "intro" }, { type: "strengths" }]),
         },
@@ -340,9 +340,9 @@ async function seedPages() {
           localeCode: "en",
           title: page.en.replace(/-/g, " "),
           slug: page.en,
-          summary: `ATA ${page.en.replace(/-/g, " ")} page`,
-          seoTitle: `ATA ${page.en.replace(/-/g, " ")}`,
-          seoDescription: `Structured ATA ${page.en.replace(/-/g, " ")} page.`,
+          summary: `Catalog ${page.en.replace(/-/g, " ")} page`,
+          seoTitle: `Catalog ${page.en.replace(/-/g, " ")}`,
+          seoDescription: `Structured Catalog ${page.en.replace(/-/g, " ")} page.`,
           publishStatus: PublishStatus.published,
           contentBlocksJson: json([{ type: "intro" }]),
         },
@@ -350,9 +350,9 @@ async function seedPages() {
           localeCode: "fr",
           title: page.fr.replace(/-/g, " "),
           slug: page.fr,
-          summary: `Page ATA ${page.fr.replace(/-/g, " ")}`,
-          seoTitle: `ATA ${page.fr.replace(/-/g, " ")}`,
-          seoDescription: `Page structuree ATA ${page.fr.replace(/-/g, " ")}.`,
+          summary: `Page Catalog ${page.fr.replace(/-/g, " ")}`,
+          seoTitle: `Catalog ${page.fr.replace(/-/g, " ")}`,
+          seoDescription: `Page structuree Catalog ${page.fr.replace(/-/g, " ")}.`,
           publishStatus: PublishStatus.published,
           contentBlocksJson: json([{ type: "intro" }]),
         },
@@ -658,7 +658,7 @@ async function seedProducts() {
   await prisma.product.create({
     data: {
       id: "product-citric-acid",
-      sku: "ATA-CIT-001",
+      sku: "Catalog-CIT-001",
       categoryId: "cat-acidity-regulators",
       manufacturerId: "manufacturer-meridian",
       publishStatus: PublishStatus.published,
@@ -755,7 +755,7 @@ async function seedProducts() {
   await prisma.product.create({
     data: {
       id: "product-sorbic-acid",
-      sku: "ATA-SOR-004",
+      sku: "Catalog-SOR-004",
       categoryId: "cat-preservatives",
       manufacturerId: "manufacturer-nordic",
       publishStatus: PublishStatus.published,
@@ -771,7 +771,7 @@ async function seedProducts() {
             shortDescription: "Preservative ingredient for shelf-life management in formulated products.",
             longDescription: "Inquiry-led sourcing page for preservative buyers who need documentation and availability checks.",
             availabilityNote: "Currently unavailable but can be monitored on request.",
-            contactForPricingMessage: "Contact ATA for future availability and pricing guidance.",
+            contactForPricingMessage: "Contact our team for future availability and pricing guidance.",
             seoTitle: "Sorbic Acid",
             seoDescription: "Sorbic acid product page with inquiry-first sourcing posture.",
             publishStatus: PublishStatus.published,
@@ -783,7 +783,7 @@ async function seedProducts() {
             shortDescription: "Ingredient conservateur pour la gestion de la duree de vie.",
             longDescription: "Page de sourcing orientee demande avec verification de disponibilite.",
             availabilityNote: "Actuellement indisponible mais suivi possible sur demande.",
-            contactForPricingMessage: "Contactez ATA pour le prix et le suivi de disponibilite.",
+            contactForPricingMessage: "Contactez notre équipe pour le prix et le suivi de disponibilite.",
             seoTitle: "Acide Sorbique",
             seoDescription: "Page produit acide sorbique oriente demande B2B.",
             publishStatus: PublishStatus.published,
@@ -805,7 +805,7 @@ async function seedProducts() {
   await prisma.product.create({
     data: {
       id: "product-sodium-bicarbonate",
-      sku: "ATA-SOD-012",
+      sku: "Catalog-SOD-012",
       categoryId: "cat-industrial-compounds",
       manufacturerId: "manufacturer-arka",
       publishStatus: PublishStatus.published,

@@ -1,15 +1,15 @@
-# Brand Audit From ATA-CRM
+# Brand Audit From crm-platform
 
 ## Reference source used
 
-- Repository URL: `https://github.com/SepehrQasemi/ATA-CRM.git`
-- Local inspected clone: `C:\dev\ATA-CRM`
+- Repository URL: `https://github.com/SepehrQasemi/crm-platform.git`
+- Local inspected clone: `the local CRM reference project`
 - Audited commit: `3932cec1b0ebe05be0717ad97f0888422413cf70`
 - Last commit at audit time: `2026-03-12 Clean professor-only artifacts and temp files (#22)`
 
 ## Files inspected for brand and design signals
 
-- `web/public/ata-logo.svg`
+- `web/public/catalog-logo.svg`
 - `web/app/favicon.ico`
 - `web/app/globals.css`
 - `web/app/layout.tsx`
@@ -28,23 +28,23 @@
 
 ## Final decisions applied on top of the audit
 
-- Official public website/company name: `Abadis Tejarat Arka`
-- Approved short brand for compact UI areas: `ATA`
-- Approved website logo: reuse the existing ATA logo
-- Public website brand name must not be `ATA CRM`
+- Official public website/company name: `Demo B2B Catalog`
+- Approved short brand for compact UI areas: `Catalog`
+- Approved website logo: reuse the existing Catalog logo
+- Public website brand name must not be `CRM Platform`
 - MVP primary font: `Manrope`
 - No secondary display font for MVP unless later justified with evidence
 
-### Brand naming observed in ATA-CRM
+### Brand naming observed in crm-platform
 
-- Product name used in UI: `ATA CRM`
-- Expanded company/system name shown under the logo: `Abadis Tejarat Arka`
+- Product name used in UI: `CRM Platform`
+- Expanded company/system name shown under the logo: `Demo B2B Catalog`
 - The CRM metadata description positions the business as a `CRM platform for food products and additives sales teams`
 
 ### Logo assets
 
-- Primary observed logo asset: `web/public/ata-logo.svg`
-- The logo is an oval red emblem with white `ATA` lettering
+- Primary observed logo asset: `web/public/catalog-logo.svg`
+- The logo is an oval red emblem with white `Catalog` lettering
 - The SVG uses:
   - filled red ellipse `#f01616`
   - white inner stroke
@@ -55,8 +55,8 @@
 ### Favicon assets
 
 - `web/app/favicon.ico` exists
-- The favicon does not visually match the ATA logo
-- It appears to be a generic default-style triangular icon rather than an ATA-branded favicon
+- The favicon does not visually match the Catalog logo
+- It appears to be a generic default-style triangular icon rather than an Catalog-branded favicon
 - This is a concrete brand inconsistency
 
 ### Color palette actually used
@@ -195,7 +195,7 @@ Observed semantic roles:
 ### Public-facing design assets
 
 Observed reusable brand asset:
-- `web/public/ata-logo.svg`
+- `web/public/catalog-logo.svg`
 
 Observed non-brand or starter assets still present:
 - `web/public/file.svg`
@@ -220,7 +220,7 @@ These points are not explicitly codified as a brand manual, but they are strongl
 
 ### What should be reused
 
-- ATA oval logo shape and red brand mark
+- Catalog oval logo shape and red brand mark
 - primary red as the dominant CTA color
 - warm off-white / blush-tinted background family
 - dark plum as a supporting accent, not the main public-page background
@@ -244,7 +244,7 @@ These points are not explicitly codified as a brand manual, but they are strongl
 ## Missing or unknown items
 
 - No formal brand guideline document was found
-- No favicon aligned with the ATA logo was found
+- No favicon aligned with the Catalog logo was found
 - No official typography loading strategy was found
 - No official illustration or photography system was found
 - No formal spacing scale documentation was found outside CSS values
@@ -256,7 +256,7 @@ These points are not explicitly codified as a brand manual, but they are strongl
 
 ### Confirmed inconsistencies
 
-- Favicon is not ATA-branded
+- Favicon is not Catalog-branded
 - Public landing component exists but is not actually wired into the root route
 - Default starter assets remain in `public/`
 - Some colors are tokenized while many others are hard-coded, so the design system is only partially normalized
@@ -267,15 +267,15 @@ These points are not explicitly codified as a brand manual, but they are strongl
 - The website should inherit the brand, not the accidental leftovers
 - The build phase should normalize colors into clearer semantic tokens
 - The website should adopt a single icon system
-- The favicon should be replaced with a true ATA favicon set
+- The favicon should be replaced with a true Catalog favicon set
 
 ## Reuse recommendations for the website build phase
 
 ### Reuse directly
 
-- `ata-logo.svg` as the starting brand mark
-- `Abadis Tejarat Arka` as the public company name
-- `ATA` as the short compact brand label
+- `catalog-logo.svg` as the starting brand mark
+- `Demo B2B Catalog` as the public company name
+- `Catalog` as the short compact brand label
 - primary red family
 - blush background family
 - rounded white card language
@@ -298,7 +298,7 @@ These points are not explicitly codified as a brand manual, but they are strongl
 
 ## Brand conclusion
 
-ATA-CRM provides enough real evidence to define a credible starting brand system for the new website:
+crm-platform provides enough real evidence to define a credible starting brand system for the new website:
 
 - logo direction is clear
 - primary palette is clear

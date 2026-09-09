@@ -71,6 +71,6 @@ describe("ProductCard", () => {
     expect(screen.queryByRole("link", { name: /industrial buffer/i })).toBeNull();
     expect(screen.getByText(/product visual pending/i)).toBeVisible();
     expect(screen.getByText(/catalog team/i)).toBeVisible();
-    expect(screen.getByText(/ATA catalog/i)).toBeVisible();
+    expect(screen.getByText(/Catalog catalog/i)).toBeVisible();
   });
 });

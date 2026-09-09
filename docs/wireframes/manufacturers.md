@@ -2,7 +2,7 @@
 
 ## Page goal
 
-Expose ATA's manufacturer/producer network as a discovery and trust layer.
+Expose Catalog's manufacturer/producer network as a discovery and trust layer.
 
 ## Wireframe
 
@@ -32,7 +32,7 @@ Expose ATA's manufacturer/producer network as a discovery and trust layer.
 
 ### 5. Inquiry CTA
 
-- ask ATA about products from a specific producer/brand
+- ask Catalog about products from a specific producer/brand
 
 ## Mobile notes
 

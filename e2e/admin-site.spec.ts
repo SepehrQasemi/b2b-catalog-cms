@@ -9,8 +9,8 @@ function readLocalEnvValue(key: string) {
   return process.env[key] ?? match?.[1] ?? "";
 }
 
-const adminEmail = readLocalEnvValue("ATA_ADMIN_EMAIL");
-const adminPassword = readLocalEnvValue("ATA_ADMIN_PASSWORD");
+const adminEmail = readLocalEnvValue("CMS_ADMIN_EMAIL");
+const adminPassword = readLocalEnvValue("CMS_ADMIN_PASSWORD");
 
 test("admin routes redirect anonymous users to login", async ({ page }) => {
   await page.goto("/admin/products");
@@ -29,7 +29,7 @@ test("admin login opens the editorial dashboard and inquiry queue", async ({
   await page.getByRole("button", { name: /enter admin/i }).click();
 
   await expect(
-    page.getByRole("heading", { name: /ata-cms dashboard/i }),
+    page.getByRole("heading", { name: /b2b-catalog-cms dashboard/i }),
   ).toBeVisible();
   await expect(page.getByRole("link", { name: /open products/i })).toBeVisible();
 
@@ -49,7 +49,7 @@ test("admin users can sign out and lose access to protected routes", async ({
   await page.getByRole("button", { name: /enter admin/i }).click();
 
   await expect(
-    page.getByRole("heading", { name: /ata-cms dashboard/i }),
+    page.getByRole("heading", { name: /b2b-catalog-cms dashboard/i }),
   ).toBeVisible();
 
   await page.getByRole("link", { name: /sign out/i }).click();

@@ -8,18 +8,18 @@
     "inquiry": "Nous contacter"
   },
   "footer": {
-    "companyBlurb": "Abadis Tejarat Arka construit un catalogue public multilingue, orienté produits, fabricants et demandes B2B.",
+    "companyBlurb": "Demo B2B Catalog construit un catalogue public multilingue, orienté produits, fabricants et demandes B2B.",
     "discover": "Découvrir",
     "status": "État de la fondation",
     "localePolicy": "Locales publiques de base : anglais et français. Le persan reste modélisé mais non public pour le MVP.",
     "pricingPolicy": "Le prix reste informatif uniquement. Sans prix public, la page produit doit orienter vers un contact direct."
   },
   "home": {
-    "eyebrow": "Abadis Tejarat Arka / ATA",
+    "eyebrow": "Demo B2B Catalog / Catalog",
     "title": "Fondation d'un catalogue B2B multilingue, sérieux et centré sur les produits, les fabricants et la conversion par demande.",
-    "description": "La phase 1 met en place l'architecture de l'application, la carte des routes, la couche de design, les limites locales et la protection de l'admin exigées par le package de spécification ATA.",
-    "heroPanelTitle": "Les bases de marque ATA sont désormais intégrées dans le scaffold vivant.",
-    "heroPanelBody": "La palette, la typographie et la direction de composition suivent l'audit ATA CRM tout en évitant une expérience publique copiée sur un dashboard.",
+    "description": "La phase 1 met en place l'architecture de l'application, la carte des routes, la couche de design, les limites locales et la protection de l'admin exigées par le package de spécification Catalog.",
+    "heroPanelTitle": "Les bases de marque Catalog sont désormais intégrées dans le scaffold vivant.",
+    "heroPanelBody": "La palette, la typographie et la direction de composition suivent l'audit CRM Platform tout en évitant une expérience publique copiée sur un dashboard.",
     "trustPoints": [
       "Routes publiques préfixées par locale pour l'anglais et le français dès le départ.",
       "Persan modélisé dans l'architecture tout en restant non public et non indexable.",

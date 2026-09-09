@@ -2,7 +2,7 @@
 
 ## Page goal
 
-Establish Abadis Tejarat Arka's credibility, explain the trading focus quickly, and route users into products, categories, manufacturers, or inquiry.
+Establish Demo B2B Catalog's credibility, explain the trading focus quickly, and route users into products, categories, manufacturers, or inquiry.
 
 ## Wireframe
 
@@ -15,7 +15,7 @@ Establish Abadis Tejarat Arka's credibility, explain the trading focus quickly, 
 
 ### 2. Hero
 
-- Eyebrow: Abadis Tejarat Arka / ATA positioning
+- Eyebrow: Demo B2B Catalog / Catalog positioning
 - H1: what the company trades and who it serves
 - Supporting paragraph
 - Primary CTA: Contact us
@@ -24,7 +24,7 @@ Establish Abadis Tejarat Arka's credibility, explain the trading focus quickly, 
 
 ### 3. Company positioning block
 
-- Short explanation of who ATA serves
+- Short explanation of who Catalog serves
 - 3 or 4 core value points:
   - sourcing reliability
   - product breadth

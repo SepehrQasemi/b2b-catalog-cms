@@ -228,9 +228,9 @@ Before Persian is public:
 - do not include Persian in locale switcher on the public site
 - do not allow Persian drafts to appear through previewless public URLs
 
-## Relationship to ATA-CRM precedent
+## Relationship to crm-platform precedent
 
-ATA-CRM already proves a relevant product decision:
+crm-platform already proves a relevant product decision:
 
 - `en` and `fr` are the active public-facing locales
 - `fa` exists in architecture but is archived from the public runtime

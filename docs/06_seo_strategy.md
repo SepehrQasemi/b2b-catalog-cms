@@ -71,7 +71,7 @@ Entity-specific rules:
 ### Home
 
 - strongest title and description writing effort
-- must describe Abadis Tejarat Arka and its trading focus clearly
+- must describe Demo B2B Catalog and its trading focus clearly
 
 ### Category pages
 
@@ -86,7 +86,7 @@ Entity-specific rules:
 
 ### Manufacturer pages
 
-- metadata should explain the manufacturer and its relationship to ATA's offering
+- metadata should explain the manufacturer and its relationship to Catalog's offering
 
 ## Canonical strategy
 
@@ -301,7 +301,7 @@ Anything else should be:
 - optional FAQ content blocks on category/product/manufacturer pages
 - optional downloads hub when datasheets and catalogs are consistently available
 - optional industries/applications landing pages when content exists
-- optional blog/content hub only if ATA commits to sustained editorial production
+- optional blog/content hub only if Catalog commits to sustained editorial production
 
 ## Search-console and measurement workflow
 

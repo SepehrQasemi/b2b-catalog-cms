@@ -46,7 +46,7 @@ export function buildPageMetadata(options: {
       title: getDefaultMetaTitle(options.title),
       description: options.description,
       url: canonical,
-      siteName: "Abadis Tejarat Arka",
+      siteName: "Demo B2B Catalog",
       locale: getOpenGraphLocale(locale),
       type: "website",
     },

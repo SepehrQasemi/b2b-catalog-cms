@@ -1,8 +1,8 @@
-# ATA-CMS
+# B2B Catalog CMS
 
-`ATA-CMS` is the repository/project name for the public multilingual website and lightweight admin CMS of `Abadis Tejarat Arka` (`ATA` for compact brand usage).
+`B2B Catalog CMS` is the repository/project name for the public multilingual website and lightweight admin CMS of `Demo B2B Catalog` (`Catalog` for compact brand usage).
 
-The public product remains the ATA website. This repository is the implementation workspace for that website + CMS foundation.
+The public product remains the Catalog website. This repository is the implementation workspace for that website + CMS foundation.
 
 ## Current Status
 
@@ -14,14 +14,14 @@ The public product remains the ATA website. This repository is the implementatio
 - SEO foundation exists: metadata, canonicals, hreflang, sitemap, robots, publication protections
 - GitHub Actions CI verifies lint, typecheck, unit tests, and production build on push/PR
 
-## What ATA-CMS Includes
+## What B2B Catalog CMS Includes
 
 - public multilingual catalog website for `en` and `fr`
 - lightweight admin CMS for pages, categories, manufacturers, products, media, inquiries, and settings
 - local-safe inquiry persistence without paid third-party dependencies
 - SEO and publication controls aligned to the specification package
 
-## What ATA-CMS Does Not Include
+## What B2B Catalog CMS Does Not Include
 
 - cart, checkout, or online payment
 - ecommerce ordering flow
@@ -97,9 +97,9 @@ If you want only dependency/database preparation without starting the dev server
 
 ## Major Product Constraints
 
-- Official public company name: `Abadis Tejarat Arka`
-- Compact brand form: `ATA`
-- `ATA-CRM` is not the public website brand
+- Official public company name: `Demo B2B Catalog`
+- Compact brand form: `Catalog`
+- `crm-platform` is not the public website brand
 - MVP font: `Manrope`
 - No ecommerce flow
 - No cart / checkout / payment

@@ -12,8 +12,8 @@ const VALID_PASSWORD = "correct-horse-battery-staple";
 const VALID_SECRET = "0123456789abcdef0123456789abcdef";
 
 function configureValidAuth() {
-  vi.stubEnv("ATA_ADMIN_EMAIL", VALID_EMAIL);
-  vi.stubEnv("ATA_ADMIN_PASSWORD", VALID_PASSWORD);
+  vi.stubEnv("CMS_ADMIN_EMAIL", VALID_EMAIL);
+  vi.stubEnv("CMS_ADMIN_PASSWORD", VALID_PASSWORD);
   vi.stubEnv("AUTH_SECRET", VALID_SECRET);
 }
 
@@ -29,7 +29,7 @@ describe("admin authentication guard", () => {
     expect(verifyAdminCredentials({ email: VALID_EMAIL, password: "wrong-password-value" })).toBe(false);
   });
 
-  test.each(["ATA_ADMIN_EMAIL", "ATA_ADMIN_PASSWORD", "AUTH_SECRET"])(
+  test.each(["CMS_ADMIN_EMAIL", "CMS_ADMIN_PASSWORD", "AUTH_SECRET"])(
     "fails closed when %s is missing",
     (missingKey) => {
       configureValidAuth();
@@ -42,7 +42,7 @@ describe("admin authentication guard", () => {
 
   test("rejects weak or malformed authentication configuration", () => {
     configureValidAuth();
-    vi.stubEnv("ATA_ADMIN_PASSWORD", "too-short");
+    vi.stubEnv("CMS_ADMIN_PASSWORD", "too-short");
     expect(verifyAdminCredentials({ email: VALID_EMAIL, password: "too-short" })).toBe(false);
 
     configureValidAuth();
@@ -50,7 +50,7 @@ describe("admin authentication guard", () => {
     expect(createAdminSessionCookie(VALID_EMAIL)).toBeNull();
 
     configureValidAuth();
-    vi.stubEnv("ATA_ADMIN_EMAIL", "not-an-email");
+    vi.stubEnv("CMS_ADMIN_EMAIL", "not-an-email");
     expect(createAdminSessionCookie("not-an-email")).toBeNull();
   });
 
@@ -72,7 +72,7 @@ describe("admin authentication guard", () => {
     const tampered = `${cookie.value.slice(0, -1)}x`;
     expect(decodeAdminSessionToken(tampered)).toBeNull();
 
-    vi.stubEnv("ATA_ADMIN_EMAIL", "new-admin@example.com");
+    vi.stubEnv("CMS_ADMIN_EMAIL", "new-admin@example.com");
     expect(decodeAdminSessionToken(cookie.value)).toBeNull();
   });
 

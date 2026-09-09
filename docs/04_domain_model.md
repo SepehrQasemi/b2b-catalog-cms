@@ -821,9 +821,9 @@ flowchart LR
 - No separate `manufacturer_product_links` because product belongs to one manufacturer in MVP
 - No dedicated `redirects` table in this conceptual minimum, though redirect handling is strongly recommended during implementation
 
-## Future integration note with ATA-CRM
+## Future integration note with crm-platform
 
-The website model deliberately uses `manufacturers` as a public-facing catalog entity instead of overloading ATA-CRM's `companies` table directly.
+The website model deliberately uses `manufacturers` as a public-facing catalog entity instead of overloading crm-platform's `companies` table directly.
 
 Reason:
 - CRM companies represent operational business contacts and roles

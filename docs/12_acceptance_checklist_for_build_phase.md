@@ -11,12 +11,12 @@
 
 ## Brand and design
 
-- Official public company name is `Abadis Tejarat Arka`
-- Compact brand usage uses `ATA`
-- ATA logo is reused from the approved brand source
-- Public website naming does not use `ATA CRM` as the brand
-- Favicon is replaced with an ATA-branded favicon set
-- Public UI reflects ATA palette and tone without copying the CRM dashboard layout
+- Official public company name is `Demo B2B Catalog`
+- Compact brand usage uses `Catalog`
+- Catalog logo is reused from the approved brand source
+- Public website naming does not use `CRM Platform` as the brand
+- Favicon is replaced with an Catalog-branded favicon set
+- Public UI reflects Catalog palette and tone without copying the CRM dashboard layout
 - `Manrope` is the single MVP font family unless a documented exception is approved
 - One icon system is used consistently
 

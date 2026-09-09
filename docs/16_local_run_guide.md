@@ -1,4 +1,4 @@
-# ATA-CMS Local Run Guide
+# B2B Catalog CMS Local Run Guide
 
 ## Fastest path
 

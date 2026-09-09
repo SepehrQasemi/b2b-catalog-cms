@@ -1,4 +1,4 @@
-# ATA-CMS Release Readiness
+# B2B Catalog CMS Release Readiness
 
 ## Implementation Status
 

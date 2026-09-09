@@ -2,7 +2,7 @@
 
 ## Page goal
 
-Make it easy for a qualified B2B visitor to contact ATA without implying online ordering.
+Make it easy for a qualified B2B visitor to contact Catalog without implying online ordering.
 
 ## Wireframe
 
@@ -36,7 +36,7 @@ Fields:
 
 ### 5. Response expectation block
 
-- how ATA will respond
+- how Catalog will respond
 - what information helps qualify an inquiry
 
 ### 6. Optional contextual panel

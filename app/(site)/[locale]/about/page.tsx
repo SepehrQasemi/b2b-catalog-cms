@@ -47,12 +47,12 @@ export default async function AboutPage({
   const valuePoints =
     locale === "fr"
       ? [
-          "ATA organise la decouverte produit autour des categories, fabricants et demandes.",
+          "Catalog organise la decouverte produit autour des categories, fabricants et demandes.",
           "Le site reste volontairement non transactionnel et oriente relation commerciale.",
           "Les contenus publics sont separes des workflows admin pour publier en securite.",
         ]
       : [
-          "ATA structures discovery around products, categories, manufacturers, and inquiry context.",
+          "Catalog structures discovery around products, categories, manufacturers, and inquiry context.",
           "The public site stays intentionally non-transactional and B2B-oriented.",
           "Editorial safety comes from explicit base and locale publication states.",
         ];

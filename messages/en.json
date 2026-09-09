@@ -8,18 +8,18 @@
     "inquiry": "Contact us"
   },
   "footer": {
-    "companyBlurb": "Abadis Tejarat Arka is building a multilingual, inquiry-led public catalog for B2B sourcing conversations across products, categories, and manufacturers.",
+    "companyBlurb": "Demo B2B Catalog is building a multilingual, inquiry-led public catalog for B2B sourcing conversations across products, categories, and manufacturers.",
     "discover": "Discover",
     "status": "Foundation status",
     "localePolicy": "Public locale foundation: English and French. Persian remains modeled but non-public for MVP.",
     "pricingPolicy": "Pricing remains informational only. Products without a public price must route users toward direct contact."
   },
   "home": {
-    "eyebrow": "Abadis Tejarat Arka / ATA",
+    "eyebrow": "Demo B2B Catalog / Catalog",
     "title": "Foundation for a serious multilingual B2B catalog, built around products, manufacturers, and inquiry-driven conversion.",
-    "description": "Phase 1 establishes the app architecture, route map, design token layer, locale boundaries, and admin protection required for the finalized ATA specification package.",
-    "heroPanelTitle": "ATA brand foundations are now encoded in the live scaffold.",
-    "heroPanelBody": "The palette, typography, and shell direction follow the ATA CRM audit while deliberately avoiding dashboard-first public composition.",
+    "description": "Phase 1 establishes the app architecture, route map, design token layer, locale boundaries, and admin protection required for the finalized Catalog specification package.",
+    "heroPanelTitle": "Catalog brand foundations are now encoded in the live scaffold.",
+    "heroPanelBody": "The palette, typography, and shell direction follow the CRM Platform audit while deliberately avoiding dashboard-first public composition.",
     "trustPoints": [
       "Locale-prefixed public routes for English and French from day one.",
       "Persian modeled in architecture while staying non-public and non-indexable.",
